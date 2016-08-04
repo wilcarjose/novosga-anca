@@ -1,7 +1,7 @@
 {
     "type": 1,
-    "name": "Locais",
-    "description": "Gerencie os locais de atendimento",
+    "name": "Ubicaciones",
+    "description": "Administración de las ubicaciones de servicios",
     "homepage": "http://novosga.org",
     "authors": [
         {

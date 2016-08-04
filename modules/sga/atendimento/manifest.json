@@ -1,7 +1,7 @@
 {
     "type": 0,
-    "name": "Atendimento",
-    "description": "Efetue o atendimento às senhas distribuídas dos serviços que você atende",
+    "name": "Atención",
+    "description": "Realice la atención de los números llamados",
     "homepage": "http://novosga.org",
     "authors": [
         {

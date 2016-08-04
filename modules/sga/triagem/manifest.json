@@ -1,7 +1,7 @@
 {
     "type": 0,
-    "name": "Triagem",
-    "description": "Gerencie a distribuíção das senhas da unidade atual",
+    "name": "Visualización",
+    "description": "Administración de los números generados en la unidad actual",
     "homepage": "http://novosga.org",
     "authors": [
         {

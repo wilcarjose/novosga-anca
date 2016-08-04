@@ -1,7 +1,7 @@
 {
     "type": 1,
-    "name": "Serviços",
-    "description": "Gerencie os serviços do sistema",
+    "name": "Servicios",
+    "description": "Administración de los servicios del sistema",
     "homepage": "http://novosga.org",
     "authors": [
         {

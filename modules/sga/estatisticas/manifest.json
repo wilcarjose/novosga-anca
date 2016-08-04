@@ -1,7 +1,7 @@
 {
     "type": 1,
-    "name": "Estatísticas",
-    "description": "Visualize e exporte estastísticas e relatórios sobre o sistema",
+    "name": "Estadísticas",
+    "description": "Ver y exportar estadísticas e informes sobre el sistema",
     "homepage": "http://novosga.org",
     "authors": [
         {
