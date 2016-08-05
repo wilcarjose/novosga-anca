@@ -182,7 +182,7 @@ msgid "Serviços"
 msgstr "Servicios"
 
 msgid "Permissões"
-msgstr "Perisos"
+msgstr "Permisos"
 
 msgid "Módulos"
 msgstr "Módulos"
@@ -1285,3 +1285,6 @@ msgstr ""
 
 msgid "Usuário inválido"
 msgstr "Usuario inválido"
+
+msgid "Exibir serviços"
+msgstr "Ver servicios"

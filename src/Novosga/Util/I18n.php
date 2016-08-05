@@ -43,7 +43,9 @@ class I18n
     {
         self::$lang = self::DEFAULT_LANG;
         self::$locale = self::DEFAULT_LOCALE;
-        $langs = self::acceptLanguage();
+        //$langs = self::acceptLanguage();
+        $langs = array('en-US' => 1);
+        
         foreach ($langs as $lang => $q) {
             $lang = explode('-', $lang);
             // se o locale esta disponivel
