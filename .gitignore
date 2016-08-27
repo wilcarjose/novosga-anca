@@ -2,7 +2,7 @@ vendor/
 composer.lock
 composer.phar
 nbproject/
-config/
+config/database.php
 var/
 modules/*
 !modules/sga/
