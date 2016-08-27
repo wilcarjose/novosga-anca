@@ -1,0 +1,13 @@
+{
+    "type": 0,
+    "name": "Atención",
+    "description": "Realice la atención de los números llamados",
+    "homepage": "http://novosga.org",
+    "authors": [
+        {
+            "name": "Rogério Lino",
+            "email": "rogeriolino@gmail.com",
+            "homepage": "http://rogeriolino.com"
+        }
+    ]
+}

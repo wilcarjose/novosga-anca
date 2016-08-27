@@ -1,0 +1,13 @@
+{
+    "type": 1,
+    "name": "Estadísticas",
+    "description": "Ver y exportar estadísticas e informes sobre el sistema",
+    "homepage": "http://novosga.org",
+    "authors": [
+        {
+            "name": "Rogério Lino",
+            "email": "rogeriolino@gmail.com",
+            "homepage": "http://rogeriolino.com"
+        }
+    ]
+}

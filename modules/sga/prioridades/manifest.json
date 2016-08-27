@@ -1,0 +1,18 @@
+{
+    "type": 1,
+    "name": "Prioridades",
+    "description": "Administración de las prioridades del sistema",
+    "homepage": "http://novosga.org",
+    "authors": [
+        {
+            "name": "Rogério Lino",
+            "email": "rogeriolino@gmail.com",
+            "homepage": "http://rogeriolino.com"
+        }
+    ],
+    "scripts": {
+        "post-install": [
+            "DataFixture::install"
+        ]
+    }
+}

@@ -1,0 +1,8 @@
+vendor/
+composer.lock
+composer.phar
+nbproject/
+config/database.php
+var/
+modules/*
+!modules/sga/

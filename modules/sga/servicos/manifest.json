@@ -1,0 +1,13 @@
+{
+    "type": 1,
+    "name": "Servicios",
+    "description": "Administración de los servicios del sistema",
+    "homepage": "http://novosga.org",
+    "authors": [
+        {
+            "name": "Rogério Lino",
+            "email": "rogeriolino@gmail.com",
+            "homepage": "http://rogeriolino.com"
+        }
+    ]
+}

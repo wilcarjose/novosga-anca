@@ -1,0 +1,13 @@
+{
+    "type": 1,
+    "name": "Administración",
+    "description": "Configuraciones Generales de Sistema",
+    "homepage": "http://novosga.org",
+    "authors": [
+        {
+            "name": "Rogério Lino",
+            "email": "rogeriolino@gmail.com",
+            "homepage": "http://rogeriolino.com"
+        }
+    ]
+}
