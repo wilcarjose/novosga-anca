@@ -35,6 +35,12 @@ class Servico extends SequencialModel
     protected $mestre;
 
     /**
+     * @ManyToOne(targetEntity="TipoServico")
+     * @JoinColumn(name="tipo_servico_id", referencedColumnName="id")
+     */
+    protected $tipoServico;
+
+    /**
      * @OneToMany(targetEntity="Servico", mappedBy="mestre")
      */
     protected $subServicos;
@@ -123,6 +129,19 @@ class Servico extends SequencialModel
         $this->servicosUnidade = $servicosUnidade;
     }
 
+    /**
+     * @return TipoServico
+     */
+    public function getTipoServico()
+    {
+        return $this->tipoServico;
+    }
+
+    public function setTipoServico(TipoServico $tipoServico)
+    {
+        $this->tipoServico = $tipoServico;
+    }
+
     public function toString()
     {
         return $this->nome;
@@ -131,12 +150,13 @@ class Servico extends SequencialModel
     public function jsonSerialize()
     {
         return [
-            'id'        => $this->getId(),
-            'nome'      => $this->getNome(),
-            'descricao' => $this->getDescricao(),
-            'peso'      => $this->getPeso(),
-            'status'    => $this->getStatus(),
-            'macro'     => $this->getMestre(),
+            'id'          => $this->getId(),
+            'nome'        => $this->getNome(),
+            'descricao'   => $this->getDescricao(),
+            'peso'        => $this->getPeso(),
+            'status'      => $this->getStatus(),
+            'macro'       => $this->getMestre(),
+            'tipoServico' => $this->getTipoServico(),
         ];
     }
 }

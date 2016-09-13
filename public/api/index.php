@@ -91,6 +91,9 @@ $app->get('/prioridades', function () use ($api) {
     echo json_encode($api->prioridades());
 });
 
+
+
+
 /*
  * Retorna os serviços globais ou habilitados por unidade (quando a mesma for informada)
  * 
@@ -120,6 +123,37 @@ $app->get('/prioridades', function () use ($api) {
  */
 $app->get('/servicos(/:unidade)', function ($unidade = 0) use ($api) {
     echo json_encode($api->servicos($unidade));
+});
+
+/*
+ * Retorna os serviços globais ou habilitados por unidade (quando a mesma for informada)
+ * 
+ * GET /servicos
+ * < 200
+ * [ 
+ *   { 
+ *     id: 1, 
+ *     nome: "Serviço 1"
+ *   },
+ *   { 
+ *     id: 2, 
+ *     nome: "Serviço 2"
+ *   }
+ * ]
+ * 
+ * GET /servicos/1
+ * < 200
+ * [ 
+ *   { 
+ *     id: 1, 
+ *     sigla: "A",
+ *     nome: "Serviço 1",
+ *     local: "Guichê"
+ *   }
+ * ]
+ */
+$app->get('/servicos/:unidade/:tiposervico', function ($unidade, $tiposervico) use ($api) {
+    echo json_encode($api->servicosByType($unidade, $tiposervico));
 });
 
 /*

@@ -107,6 +107,35 @@ class ApiV1 extends Api
     }
 
     /**
+     * Retorna os serviços globais ou os serviços disponíveis na unidade informada.
+     *
+     * @param int $unidade
+     * @param int $tipoServico
+     *
+     * @return array
+     */
+    public function servicosByType($unidade, $tipoServico)
+    {   
+        // servicos da unidade
+        return $this->em->createQuery('
+            SELECT
+                s.id, e.sigla, s.nome, l.nome as local
+            FROM
+                Novosga\Model\ServicoUnidade e
+                JOIN e.servico s
+                JOIN e.local l
+            WHERE
+                e.status = 1 AND
+                e.unidade = :unidade AND
+                s.tipoServico = :tipoServico
+            ORDER BY
+                s.nome ASC
+        ')->setParameter(':unidade', $unidade)
+          ->setParameter(':tipoServico', $tipoServico)
+            ->getResult();
+    }
+
+    /**
      * Retorna as senhas para serem exibidas no painel (max result 10).
      *
      * @param int    $unidade
