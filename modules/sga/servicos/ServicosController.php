@@ -30,8 +30,11 @@ class ServicosController extends CrudController
     protected function preSave(Context $context, SequencialModel $model)
     {
         $id_macro = (int) $context->request()->post('id_macro');
+        $id_tipo_servico = (int) $context->request()->post('id_tipo_servico');
         $macro = $this->em()->find("Novosga\Model\Servico", $id_macro);
+        $tipoServico = $this->em()->find("Novosga\Model\TipoServico", $id_tipo_servico);
         $model->setMestre($macro);
+        $model->setTipoServico($tipoServico);
     }
 
     protected function search($arg)
@@ -60,8 +63,10 @@ class ServicosController extends CrudController
     {
         parent::edit($context, $id);
         $query = $this->em()->createQuery("SELECT e FROM Novosga\Model\Servico e WHERE e.mestre IS NULL AND e.id != :id ORDER BY e.nome ASC");
+        $queryTipos = $this->em()->createQuery("SELECT e FROM Novosga\Model\TipoServico e WHERE e.status = 1 ORDER BY e.nome ASC");
         $query->setParameter('id', $this->model->getId());
         $this->app()->view()->set('macros', $query->getResult());
+        $this->app()->view()->set('tipo_servicos', $queryTipos->getResult());
     }
 
     protected function postSave(Context $context, SequencialModel $model)

@@ -1,0 +1,13 @@
+{
+    "type": 1,
+    "name": "Tipos de Servicios",
+    "description": "Administración de los tipos servicios del sistema",
+    "homepage": "http://novosga.org",
+    "authors": [
+        {
+            "name": "Wilcar José Angulo",
+            "email": "wilcarjose@gmail.com",
+            "homepage": "http://wilcarjose.com"
+        }
+    ]
+}

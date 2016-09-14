@@ -92,6 +92,26 @@ $app->get('/prioridades', function () use ($api) {
 });
 
 
+/*
+ * Retorna todas as prioridades disponíveis
+ * 
+ * GET /prioridades
+ * < 200
+ * [
+ *   {
+ *     id: 3,
+ *     nome: "Gestante"
+ *   },
+ *   {
+ *     id: 4,
+ *     nome: "Idoso"
+ *   }
+ * ]
+ */
+$app->get('/tiposervicos', function () use ($api) {
+    echo json_encode($api->tipoServicos());
+});
+
 
 
 /*

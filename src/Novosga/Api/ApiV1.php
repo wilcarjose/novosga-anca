@@ -107,6 +107,25 @@ class ApiV1 extends Api
     }
 
     /**
+     * Retorna os tipos de serviços globais 
+     * @author Wilcar Jose Angulo 
+     * @return array
+     */
+    public function tipoServicos()
+    {
+        return $this->em->createQuery('
+            SELECT
+                e.id, e.nome
+            FROM
+                Novosga\Model\TipoServico e
+            WHERE
+                e.status = 1
+            ORDER BY
+                e.nome ASC
+        ')->getResult();    
+    }
+
+    /**
      * Retorna os serviços globais ou os serviços disponíveis na unidade informada.
      *
      * @param int $unidade
