@@ -1,8 +1,8 @@
 /**
  * Novo SGA - Servicos
- * @author Rogerio Lino <rogeriolino@gmail.com>
+ * @author Wilcar José Angulo <wilcarjose@gmail.com>
  */
 var SGA = SGA || {};
 
-SGA.Servicos = {
+SGA.TipoServicos = {
 };
